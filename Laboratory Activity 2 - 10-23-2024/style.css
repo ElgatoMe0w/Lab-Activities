@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: Arial, sans-serif;
+        background-image: url('back.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        color: #fff;
+   
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: orangered;
+}
+
+.reminder {
+    background-color: tomato;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+section.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+section.images .image-box {
+    flex: 1 1 22%;
+    margin: 10px;
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    overflow: hidden; /* This ensures that images that are larger than the box size will be clipped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures that images fill the box without distortion */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.goals {
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.goals h2 {
+    color: red;
+}
+
+.goals ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.goals ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.quote {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
